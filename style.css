@@ -1,0 +1,28 @@
+:root { --ink:#16181d; --ink-2:#4b5060; --line:#e3e6ee; --accent:#5b5bd6; --bg:#ffffff; --surface:#f7f8fb; }
+@media (prefers-color-scheme: dark) {
+  :root { --ink:#eef0f6; --ink-2:#aab0c2; --line:#272b36; --accent:#9d9cff; --bg:#0f1116; --surface:#171a22; }
+}
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif; line-height:1.6; }
+main { max-width:760px; margin:0 auto; padding:48px 22px 96px; }
+h1 { font-size:32px; letter-spacing:-.02em; margin:0 0 4px; }
+.sub { color:var(--ink-2); font-size:14px; margin:0 0 8px; }
+h2 { font-size:20px; margin:38px 0 10px; padding-top:18px; border-top:1px solid var(--line); }
+h3 { font-size:16px; margin:22px 0 6px; }
+p, li { font-size:15.5px; }
+ul { padding-left:22px; }
+li { margin:5px 0; }
+a { color:var(--accent); }
+.callout { background:var(--surface); border:1px solid var(--line); border-left:3px solid var(--accent);
+  border-radius:10px; padding:14px 18px; margin:18px 0; font-size:14.5px; color:var(--ink-2); }
+table { border-collapse:collapse; width:100%; font-size:14px; margin:14px 0; }
+th,td { text-align:left; padding:9px 12px; border:1px solid var(--line); vertical-align:top; }
+th { background:var(--surface); }
+.email-card { background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:22px; margin:20px 0; text-align:center; }
+.email-card p { margin:0 0 10px; color:var(--ink-2); font-size:14px; }
+.email-link { display:inline-block; font-size:20px; font-weight:700; color:var(--accent); text-decoration:none; word-break:break-word; }
+.links { display:flex; gap:10px; flex-wrap:wrap; margin:18px 0; }
+.links a { color:var(--ink); text-decoration:none; font-size:14px; font-weight:600; border:1px solid var(--line); border-radius:999px; padding:9px 18px; }
+.links a:hover { border-color:var(--accent); color:var(--accent); }
+footer { margin-top:44px; padding-top:18px; border-top:1px solid var(--line); color:var(--ink-2); font-size:13px; }
